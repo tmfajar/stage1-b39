@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.content {
+  border: 1px solid rgb(88, 178, 60);
+  width: 250 px;
+  padding: 20px 250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgb(79, 79, 79);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+
+.button {
+  background-color: rgb(116, 116, 119); 
+  color: fswhite;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 100px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-brands:hover {
+  color: #f1f1f1;
+} 
+
+a {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  margin: 5px;
+}
