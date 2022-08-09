@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/contact.css">
+    <title>contact me</title>
+    <style>      
+        * {box-sizing: border-box ;}
+        </style>
+</head>
+
+    <body>  
+            <div id="navbar">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" style="width: 10%;">
+                </a>
+                <a href="index.html">Home</a>
+                <a href="addmyproject.html">My Project</a>
+            </div>
+
+            <h1 class="title">GET IN TOUCH</h1>
+            <div class="container">
+
+
+            <div style="
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;">
+            <form id="form-contact">
+                <h1 class="title">GET IN TOUCH</h1>  
+                <div style=" margin-bottom:20px ;">
+                    <label for="name" style="font-size: 20px; font-weight: 700;">Name</label>
+                    <input id="name" type="text" required placeholder="input your name" style="
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 8px;
+                        background-color: #f3f3f3;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        margin-top: 5px;">
+                </div>
+
+                <div style="margin-bottom:20px ;">
+                    <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
+                    <input id="email" type="text" style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    background-color: #f3f3f3;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 8px;
+                    margin-top: 5px;">
+                </div>
+
+                <div style="margin-bottom:20px ;">
+                    <label for="phone" style="font-size: 20px; font-weight: 700;">Phone Number</label>
+                    <input id="pnumber" type="text" style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    background-color: #f3f3f3;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 8px;
+                    margin-top: 5px;">
+                </div>
+
+                <div style="margin-bottom:20px ;">
+                    <label for="subject" style="font-size: 20px; font-weight: 700;">Country</label>
+                    <select id="subject" style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    background-color: #f3f3f3;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 8px;
+                    margin-top: 5px;">
+                        <option>Indonesia</option>
+                        <option>Malaysia</option>
+                        <option>Singapura</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:20px ;">
+                    <label for="message" style="font-size: 20px; font-weight: 700;">Your Message</label>
+                    <textarea id="ymessage" cols="30" rows="10" style="
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 8px;
+                        background-color: #f3f3f3;
+                        border: 1px solid #c4c4c4;
+                        border-radius: 8px;
+                        margin-top: 5px;
+                        resize: none;
+                        height: 100px;
+                    " placeholder="input your message"></textarea>
+                </div>
+                
+            
+
+                 <button type="button" onclick="submitForm()" style="
+                    background-color:  rgb(116, 116, 119); 
+                    color: fswhite;
+                    color: white;
+                    border: none;
+                    padding: 8px 30px;
+                    border-radius: 10px;                        
+                    cursor: pointer;">Submit</button>
+                
+            </form>
+        </div>
+        <script src="assets/js/contact.js"></script>
+    </body>
+</html>
