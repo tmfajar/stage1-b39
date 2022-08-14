@@ -13,7 +13,7 @@
                     <img src="assets/images/logo.png" style="width: 10%;">
                 </a>
                 <a href="index.html">Home</a>
-                <a href="addmyproject.html">My Project</a>
+                <a href="addmyproject.html">Blog</a>
             </div>
 
             <h1 class="title">GET IN TOUCH</h1>
@@ -40,7 +40,7 @@
 
                 <div style="margin-bottom:20px ;">
                     <label for="email" style="font-size: 20px; font-weight: 700;">Email</label>
-                    <input id="email" type="text" style="
+                    <input id="email" type="text" required placeholder="input your email" style="
                     width: 100%;
                     box-sizing: border-box;
                     padding: 8px;
@@ -52,7 +52,7 @@
 
                 <div style="margin-bottom:20px ;">
                     <label for="phone" style="font-size: 20px; font-weight: 700;">Phone Number</label>
-                    <input id="pnumber" type="text" style="
+                    <input id="pnumber" type="text" required placeholder="input your phone" style="
                     width: 100%;
                     box-sizing: border-box;
                     padding: 8px;
@@ -72,9 +72,10 @@
                     border: 1px solid #c4c4c4;
                     border-radius: 8px;
                     margin-top: 5px;">
-                        <option>Indonesia</option>
-                        <option>Malaysia</option>
-                        <option>Singapura</option>
+                        <option value="0">select</option>
+                        <option value="1">Indonesia</option>
+                        <option value="2">Malaysia</option>
+                        <option value="3">Singapura</option>
                     </select>
                 </div>
 
@@ -92,10 +93,7 @@
                         height: 100px;
                     " placeholder="input your message"></textarea>
                 </div>
-                
-            
-
-                 <button type="button" onclick="submitForm()" style="
+                <button type="button" onclick="submitForm()" style="
                     background-color:  rgb(116, 116, 119); 
                     color: fswhite;
                     color: white;

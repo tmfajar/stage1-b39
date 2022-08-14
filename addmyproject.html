@@ -1,0 +1,129 @@
+<html >
+<head>
+    <link rel="stylesheet" href="assets/addmyproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form & navbar</title>
+    <style>    
+        * {box-sizing: border-box ;}
+        </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html">
+            <img src="assets/images/logo.png" style="width: 10%;">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="addmyproject.html">Blog</a>
+        <div id="navbar-right">  
+          <a class="active" href="contact.html">contact me</a>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h1>ADD MY PROJECT</h1> 
+                    <div>
+                        <label for="input-blog-title" style="font-weight:bold ;">Title</label>
+                        <input type="text" id="input-blog-title" placeholder="input title"/>
+                    </div>
+                    <div class="date">
+                        <div class="input-date">
+                            <label for="sDate" style="font-weight:bold ;">Start Date</label>
+                            <input type="datetime-local" id="sDate" name="sDate" >
+                        </div>
+                        <div class="input-date">
+                            <label for="eDate" style="font-weight:bold ;">End Date</label>
+                            <input type="datetime-local" id="eDate" name="eDate" >
+                        </div>
+                    </div> 
+                    <div>
+                        <label for="input-blog-description" style="font-weight:bold ;">Description</label>
+                        <textarea id="input-blog-description" placeholder="Write something.."></textarea>
+                    </div>
+                    <div>
+                        <label for="input-blog-technologies" style="font-weight:bold ;">Technologies</label>
+                        <div class="technologies">
+                            <div class="tecnologies1">
+                                <div>
+                                    <label class="container" for="nodejs">Node JS
+                                        <input id="nodejs" type="checkbox">
+                                        <span class="checkmark"></span>    
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="container" for="reactjs">React JS
+                                        <input id="reactjs" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>     
+                                </div>
+                            </div>
+                            <div class="tecnologies2">
+                                <div>
+                                    <label class="container" for="nextjs" >Next JS
+                                        <input id="nextjs" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label> 
+                                </div>
+                                <div>
+                                    <label class="container" for="ts">TypeScript
+                                        <input id="ts" type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>    
+                        </div>    
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label for="input-blog-image" style="font-weight:bold ;">Upload Image</label>
+                        <div class="input-blog-image-group">
+                          <label for="input-blog-image">
+                            <p>Attach File</p>
+                            <img src="assets/images/file.png" alt="file" />
+                          </label>
+                          <input type="file" id="input-blog-image" hidden />
+                        </div>
+                        <div class="button-group">
+                            <button>Post Blog</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="line" />
+        <div id="contents" class="blog-list">
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/images/coding.png" alt="" />
+                </div>
+                    <div class="blog-content">
+                    <div class="btn-grup">
+                        <button class="btn-edit">Edit Post</button>
+                        <button class="btn-post">Post Blog</button>
+                    </div>
+                    <h1>
+                    <a href="addmyprojectdetail.html" target="_blank">Apa itu Coding?</a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        27 July 2022 | T.M.Fajar Pramudya
+                    </div>
+                        <p>Di era digital dan perkembangan teknologi yang pesat seperti sekarang ini.
+                        Profesi programmer atau developer perangkat lunak banyak menarik minat atau 
+                        menjadi primadona sebagian orang. Perkembangan perangkat lunak atau aplikasi 
+                        tidak terlepas dari para programmer yang mengembangkannya, dengan kata lain 
+                        programmer lah yang meng coding aplikasi tersebut. Jadi apa itu coding? Dimana 
+                        memulai belajar coding? Temukan jawabannya melalui uraian di bawah ini.</p>
+                    <div style="text-align: right; margin-top: 15px">
+                        <span style="font-size: 12px; color:grey">1 minutes ago</span>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>    
+    <script src="assets/js/addmyproject.js"></script>
+</body>
+  
+</html>
+
