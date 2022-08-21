@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="assets/addmyproject.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
     <title>form & navbar</title>
     <style>    
         * {box-sizing: border-box ;}
@@ -14,7 +15,7 @@
             <img src="assets/images/logo.png" style="width: 10%;">
         </a>
         <a href="index.html">Home</a>
-        <a href="addmyproject.html">Blog</a>
+        <a href="addmyproject.html">My Project</a>
         <div id="navbar-right">  
           <a class="active" href="contact.html">contact me</a>
         </div>
@@ -23,7 +24,7 @@
     <div class="blog">
         <div class="blog-form">
             <div class="form-container">
-                <form onsubmit="addBlog(event)">
+                <form>
                     <h1>ADD MY PROJECT</h1> 
                     <div>
                         <label for="input-blog-title" style="font-weight:bold ;">Title</label>
@@ -86,20 +87,21 @@
                           <input type="file" id="input-blog-image" hidden />
                         </div>
                         <div class="button-group">
-                            <button>Post Blog</button>
+                            <button type="button" onclick="addBlog()">Post Blog</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <hr class="line" />
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;margin-bottom: 40px;">MY PROJECT</h1> 
         <div id="contents" class="blog-list">
-            <div class="blog-list-item">
+            <!-- <div class="blog-list-item">
                 <div class="blog-image">
-                    <img src="assets/images/coding.png" alt="" />
+                    <img src="assets/images/coding.png"  alt="" />
                 </div>
                     <div class="blog-content">
-                    <div class="btn-grup">
+                    <div class="btn-group">
                         <button class="btn-edit">Edit Post</button>
                         <button class="btn-post">Post Blog</button>
                     </div>
@@ -119,10 +121,10 @@
                         <span style="font-size: 12px; color:grey">1 minutes ago</span>
                     </div>
                 </div>
-             </div>
+             </div> -->
         </div>
-    </div>    
-    <script src="assets/js/addmyproject.js"></script>
+    </div>  
+    <script src="assets/js/addmyproject.js"></script>  
 </body>
   
 </html>
